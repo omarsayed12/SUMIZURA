@@ -1,0 +1,33 @@
+//secound mixin and uses
+@mixin overlay($color, $opacity) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color, $opacity);
+}
+
+@mixin transisionElement($tran) {
+    -webkit-transition: $tran;
+    -moz-transition: $tran;
+    -o-transition: $tran;
+    -ms-transition: $tran;
+    transition: $tran;
+}
+
+@mixin transformElment($property) {
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -o-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin backgroumdElement($property) {
+    -webkit-background-clip: $property;
+    -moz-background-clip: $property;
+    -o-background-clip: $property;
+    -ms-background-clip: $property;
+    background-clip: $property;
+}

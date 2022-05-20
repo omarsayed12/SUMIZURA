@@ -1,0 +1,14 @@
+%link-style {
+    text-decoration: none;
+    &:focus,
+    &:hover {
+       box-shadow: none;
+    }
+ }
+ 
+ %before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+ }
