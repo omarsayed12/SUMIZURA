@@ -16,6 +16,13 @@
         font-size: 2.25rem;
         text-shadow: 3px 3px 4px rgb(0 0 0 / 65%);
         @extend %textTransform-fontWeight-margin;
+        @media screen and (max-width: 500px) {
+          font-size: 1.4rem;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        left: 3%;
+        right: 3%;
       }
     }
   }
@@ -30,6 +37,10 @@
       @include transisionElement(opacity .3s);
       &:hover {
         opacity: 1;
+      }
+      @media screen and (max-width: 767.98px){
+        width: 85px;
+        top: 396px;
       }
     }
   .control-prev {

@@ -39,16 +39,21 @@
           <a class="navbar-brand site-wrappers-5" href="#">
             <img src="./dist/imgs/logo.png" class="img-fluid" alt="SUMIZURA LOGO">
           </a>
-          <div class="menu-wrapper">
-            <div class="hamburger-menu"></div>
-            <nav class="nav flex-column menu-item">
-              <a class="nav-link active" aria-current="page" href="#">sumizura</a>
-              <a class="nav-link" href="#">about us</a>
-              <a class="nav-link" href="#">project</a>
-              <a class="nav-link" href="#">careers</a>
-              <a class="nav-link" href="#">contact us</a>
-            </nav>
-          </div>
+          <nav role='navigation' class="menu-bar">
+            <div id="menuToggle">
+              <input type="checkbox" class="menuToggle-icon"/>
+              <span class="humburger-icon"></span>
+              <span class="humburger-icon"></span>
+              <span class="humburger-icon"></span>
+              <ul id="menu" class="menu-contnet">
+                <a class="nav-link" href="#"><li class="menu-item main-item">sumizura</li></a>
+                <a class="nav-link" href="#"><li class="menu-item">about us</li></a>
+                <a class="nav-link" href="#"><li class="menu-item">projects</li></a>
+                <a class="nav-link" href="#"><li class="menu-item">careers</li></a>
+                <a class="nav-link" href="#"><li class="menu-item">contact us</li></a>
+              </ul>
+            </div>
+          </nav>
         </div>
       </nav>
     </header>
