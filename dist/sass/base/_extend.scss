@@ -5,10 +5,16 @@
        box-shadow: none;
     }
  }
- 
+
  %before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
+ }
+
+ %textTransform-fontWeight-margin {
+   text-transform: uppercase;
+   font-weight: 700;
+   margin: 0
  }

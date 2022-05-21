@@ -1,0 +1,41 @@
+#main-page {
+  .carousel-item {
+    .carousel-img {
+      height: 100vh;
+    }
+    .carousel-caption {
+      text-align: left;
+      left: 4%;
+      bottom: 2.25rem;
+      .caption-heading {
+        font-size: 1rem;
+        text-shadow: 2px 2px 8px rgb(0 0 0 / 40%);
+        @extend %textTransform-fontWeight-margin;
+      }
+      .caption-description {
+        font-size: 2.25rem;
+        text-shadow: 3px 3px 4px rgb(0 0 0 / 65%);
+        @extend %textTransform-fontWeight-margin;
+      }
+    }
+  }
+  .control-prev ,
+  .control-next{
+      position: fixed;
+      width: 146px;
+      height: 146px;
+      top: 334px;
+      z-index: 999;
+      opacity: 0;
+      @include transisionElement(opacity .3s);
+      &:hover {
+        opacity: 1;
+      }
+    }
+  .control-prev {
+    left: -16px;
+  }
+  .control-next {
+    right: -16px;
+  }
+}
