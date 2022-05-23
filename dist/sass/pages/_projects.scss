@@ -8,25 +8,44 @@
 
 .project-item {
   position: relative;
-  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  width: auto;
+  height: 380px;
+  margin-bottom: 3px;
   img {
-      height: 400px;
-      object-fit: cover;
+    height: 397px;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    @include transisionElement(transform .5s ease-in-out);
   }
   .project-content {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      font-weight: 700;
-      font-size: 2rem;
-      line-height: 1.2;
-      color: $color-white;
-      box-shadow: inset 0 0 0 100vmax rgb(0 0 0 / 50%);
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: $color-white;
+    box-shadow: inset 0 0 0 100vmax rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.0);
+    @include transisionElement(transform 500ms ease);
+  }
+  &:hover .project-content  {
+    transform: scale(1, 1);
+  }
+  &:hover img {
+    transform: scale(1.1);
   }
 }
