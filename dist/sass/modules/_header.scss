@@ -1,8 +1,8 @@
 header {
   .menu-bar {
     #menuToggle {
-      position: absolute;
-      top: 27px;
+      position: fixed;
+      top: 18px;
       right: 50px;
       display: block;
       z-index: 1;
@@ -22,7 +22,7 @@ header {
       }
       .humburger-icon {
         display: block;
-        width: 33px;
+        width: 32px;
         height: 4px;
         margin-bottom: 8px;
         position: relative;
@@ -56,13 +56,13 @@ header {
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
         .menu-item{
           text-transform: capitalize;
-          font-size: 27px;
+          font-size: 20px;
           font-weight: 900;
           color: #646464;
           letter-spacing: 2px;
           margin: 20px auto 0;
           @media screen and (max-width: 450px) {
-            font-size: 21px;
+            font-size: 17px;
           }
         }
         .main-item {
@@ -88,7 +88,7 @@ header {
 }
 .menuToggle-icon:checked ~ .humburger-icon:nth-last-child(2) {
   opacity: 1;
-  transform: rotate(-45deg) translate(4px, -4px);
+  transform: rotate(-45deg) translate(5px, -4px);
 }
 
 #menuToggle .menuToggle-icon:checked ~.menu-contnet {

@@ -1,39 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-body::-webkit-scrollbar {
-  width: 4px;
-}
-
-.nav-container {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.container-fluid {
-  padding-right: 80px;
-  padding-left: 80px;
-}
-
-.px-number {
-  padding-top: 9px !important;
-  padding-bottom: 45px !important;
-}
-
 #main-page .carousel-item .carousel-caption .caption-description, #main-page .carousel-item .carousel-caption .caption-heading {
   text-transform: uppercase;
   font-weight: 700;
   margin: 0;
 }
 
-.company-intro .companyCommom-heading {
-  font-weight: 800;
-  font-size: 2.5rem;
-  color: #646464;
-  text-transform: uppercase;
-  padding: 40px 0 25px;
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
 }
 
 #main-page .carousel-item .carousel-img {
@@ -96,8 +73,8 @@ body::-webkit-scrollbar {
 }
 
 header .menu-bar #menuToggle {
-  position: fixed;
-  top: 18px;
+  position: absolute;
+  top: 27px;
   right: 50px;
   display: block;
   z-index: 1;
@@ -118,7 +95,7 @@ header .menu-bar #menuToggle .menuToggle-icon {
 }
 header .menu-bar #menuToggle .humburger-icon {
   display: block;
-  width: 32px;
+  width: 33px;
   height: 4px;
   margin-bottom: 8px;
   position: relative;
@@ -185,7 +162,7 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
 
 .menuToggle-icon:checked ~ .humburger-icon:nth-last-child(2) {
   opacity: 1;
-  transform: rotate(-45deg) translate(5px, -4px);
+  transform: rotate(-45deg) translate(4px, -4px);
 }
 
 #menuToggle .menuToggle-icon:checked ~ .menu-contnet {
@@ -193,68 +170,4 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   opacity: 1;
 }
 
-.about .about-container {
-  margin-top: 100px;
-}
-.about .about-container .about-content {
-  position: relative;
-  height: 638px;
-}
-.about .about-container .about-content .about-img {
-  height: 100%;
-}
-.about .about-container .about-content .about-desc img {
-  position: absolute;
-  z-index: 111;
-  position: absolute;
-  z-index: 111;
-  top: 10%;
-  right: -30%;
-  max-width: 604px;
-}
-.about .about-container .about-number .aboutNumber-content {
-  padding: 8px 0 20px;
-  margin: 0 0 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 5px solid #ff0000;
-}
-.about .about-container .about-number .our-number {
-  color: #646464;
-  font-size: 4.5rem;
-  font-weight: 700;
-  margin: 0;
-}
-.about .about-container .about-number .ourNumber-heading {
-  color: #646464;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 1.125rem;
-  font-weight: 700;
-}
-.about .about-container .about-number .ourNumber-desc {
-  color: #646464;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.company-intro {
-  padding: 30px 0 60px;
-}
-.company-intro .companyCommom-descrip {
-  font-size: 1.25rem;
-  color: #646464;
-  margin-bottom: 0px;
-  line-height: 1.7;
-  color: #646464;
-}
-.company-intro .companyCommom-intro {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #646464;
-  margin: 0 0 25px;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styl.css.map */
