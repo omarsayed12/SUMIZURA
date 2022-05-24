@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index"/>
+    <meta name="description" content="@yield('seo_description', '')">
+    <meta name="keywords" content="@yield('seo_keywords', '')">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:locale" content=""/>
+    <meta property="og:type" content=""/>
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <!-- For the og:image content, replace the # with a link of an image -->
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content=""/>
+    <!-- Add site Favicon -->
+    <link rel="icon" href="./dist/imgs/icon.png" sizes="32x32"/>
+    <link rel="icon" href="./dist/imgs/icon.png" sizes="192x192"/>
+    <link rel="apple-touch-icon" href="./dist/imgs/icon.png"/>
+    <meta name="msapplication-TileImage" content=""/>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- File CSS  -->
+    <link rel="stylesheet" href="./dist/css/style.css">
+
+    <title>contact us</title>
+  </head>
+  <body>
+
+    <!-- start header -->
+    <header>
+      <nav class="navbar bg-white fixed-top">
+        <div class="nav-container">
+          <a class="navbar-brand site-wrappers-5" href="#">
+            <img src="./dist/imgs/logo.png" class="w-100" alt="SUMIZURA LOGO">
+          </a>
+          <nav role='navigation' class="menu-bar">
+            <div id="menuToggle">
+              <input type="checkbox" class="menuToggle-icon"/>
+              <span class="humburger-icon"></span>
+              <span class="humburger-icon"></span>
+              <span class="humburger-icon"></span>
+              <ul id="menu" class="menu-contnet">
+                <a class="nav-link" href="#"><li class="menu-item main-item">sumizura</li></a>
+                <a class="nav-link" href="#"><li class="menu-item">about us</li></a>
+                <a class="nav-link" href="#"><li class="menu-item">projects</li></a>
+                <a class="nav-link" href="#"><li class="menu-item">careers</li></a>
+                <a class="nav-link" href="#"><li class="menu-item">contact us</li></a>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+    <!-- start main -->
+    <main>
+      <!-- start our-persence -->
+      <div class="our-persence">
+        <div class="container-fluid">
+          <div class="ourPersence-content text-center">
+            ARE YOU READY TO EXPL​ORE THE WORLD,<br> STIMULATE YOUR MIND AND INDULG​E YOUR IMAGINATION?
+          </div>
+        </div>
+      </div>
+      <!-- end our-persence -->
+      <!-- start section contact-us -->
+      <section class="contact-us">
+        <div class="container-fluid">
+          <h1 class="contactUS-title">careers</h1>
+          <div class="row justify-content-between">
+            <div class="col-md-6">
+                <div class="careers-content">
+                    <p class="careers-desc"> At SUMIZURA, we pride ourselves on having the courage to do things differently. We give our people the space to be themselves, and the freedom to design and do things their way.</p>
+                    <p class="careers-desc">We believe that when clients choose to collaborate with us, they often make the decision based on our people. And not just their technical expertise, but their collaborative spirit and innovation. Their capacity for solving problems through creativity.​ As a result, ours is a genuinely dynamic, diverse and future-focused organization. We have the strength of vision to guide us, the energy to drive us, and a deep-rooted commitment to delivering positive change.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-container">
+                <form class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-4">
+                      <label for="name" id="name" class="form-label">name</label>
+                      <input type="text" class="form-control input-filed" id="name" placeholder="Enter your name" value="" required>
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
+                    </div>
+                    <div class="col-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control input-filed" id="email" placeholder="Enter a valid email address">
+                        <div class="invalid-feedback">
+                        Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <label for="name" id="name" class="form-label">nattionality</label>
+                        <input type="text" class="form-control input-filed" id="name" placeholder="Enter your name" value="" required>
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+                    <div class="col-md-6">
+                      <label for="country" class="form-label">Country of residence</label>
+                      <select class="form-select input-filed" id="country" name="country-select" required>
+                        <option value="">Select your country</option>
+                        <option value="">United States</option>
+                        <option value="">United States</option>
+                        <option value="">United States</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid country.
+                      </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="textProfile" id="name" class="form-label">linkedin profile</label>
+                        <input type="text" class="form-control input-filed" id="textProfile" placeholder="https://" value="" required>
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="col-6">
+                      <label for="mobilerNumber" class="form-label">mobile number</label>
+                      <div class="input-group has-validation">
+                        <input type="text" class="form-control input-filed" id="mobilerNumber" placeholder="Username" required>
+                        <div class="invalid-feedback">
+                          Your username is required.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="deparment" class="form-label">select department</label>
+                        <select class="form-select input-filed" id="deparment" name="deparment-name" required>
+                          <option value=""></option>
+                          <option>option one</option>
+                          <option>option tow</option>
+                          <option>option three</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid country.
+                        </div>
+                      </div>
+                    <div class="col-12">
+                      <label for="message" class="form-label">message</label>
+                      <div class="message-content">
+                        <textarea class="text-message" name="message" id="message" rows="3" placeholder="Enter your message"></textarea>
+                      </div>
+                    </div>
+
+                  </div>
+                  <button class="btn btn-submit" type="submit">submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section contact-us -->
+    </main>
+    <!-- end main -->
+    <!-- start header -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./dist/js/main.js"></script>
+  </body>
+</html>
