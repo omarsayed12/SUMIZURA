@@ -1,17 +1,46 @@
-.contactUS-title {
-    margin-bottom: 25px;
+.careers-header {
+  min-height: 450px;
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .careers-heading {
+      text-transform: uppercase;
+      font-weight: 800;
+      letter-spacing: 4px;
+      line-height: 1.6;
+      font-size: 42px;
+      color: #646464;
+      padding: 0 10px;
+  }
 }
-.careers-desc {
+
+.careers-container {
+  .careers-title {
+    margin-bottom: 25px;
+    @extend  .section-heading-style;
+  }
+  .careers-desc {
     font-size: 1.25rem;
     margin: 20px 0 40px;
     color: $light-black;
-}
-
-.ourPersence-content{
-    text-transform: uppercase;
-    font-weight: 900 !important;
-    letter-spacing: 7px;
-    line-height: 1.6;
-    font-size: 2.1rem !important;
-    margin: 60px 0;
+  }
+  .form-container {
+    .form-label {
+      &::after {
+        content:"(Required)" !important;
+        top: 0;
+        left: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        @extend  %position-color ;
+      }
+    }
+    .required-files {
+      color: $light-black;
+      span {
+          color: #dd3333;
+      }
+    }
+  }
 }

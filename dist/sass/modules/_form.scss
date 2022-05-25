@@ -1,0 +1,39 @@
+
+.form-container {
+    .required-files {
+      color: $light-black;
+      span {
+          color: #dd3333;
+      }
+    }
+    .needs-validation {
+      .form-label {
+        @extend .form-label-style;
+      }
+      .input-filed {
+        @extend .input-filed-form
+      }
+      ::placeholder {
+        color: #8a8888;
+      }
+      select:required:invalid {
+        color: #8a8888;
+      }
+      option[value=""][disabled] {
+        display: none;
+      }
+      option {
+        color: black;
+      }
+  
+      .message-content {
+        .text-message {
+          @extend  .textarea-message;
+        }
+      }
+      .btn-submit {
+        @extend .btn-sunmit-form;
+      }
+    }
+  }
+  

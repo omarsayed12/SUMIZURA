@@ -26,3 +26,89 @@
    text-transform: uppercase;
    padding: 40px 0 25px;
  }
+
+ %flex-textTransform-color {
+  display: flex;
+  align-items: center;
+  color: $light-black;
+  text-transform: capitalize;
+ }
+
+ %font-padding-margin {
+  padding: 0;
+  margin:  0 10px 0 0;
+  font-weight: 700;
+  font-size: 1rem;
+ }
+
+%padding-margin {
+  padding: 0;
+  margin:  0 10px 0 0
+}
+
+ .section-heading-style {
+   font-weight: 800;
+   font-size: 2.5rem;
+   line-height: 1.1;
+   text-transform: uppercase;
+   margin: 100px 0 70px;
+   color: $light-black;
+ }
+
+ .form-label-style {
+   font-size: 16px;
+   font-weight: 700;
+   text-transform: capitalize;
+   margin-bottom: 8px;
+   padding: 0;
+   color: $light-black;
+ }
+
+ %position-color {
+   position: relative;
+   color: #dd3333;
+ }
+
+ .input-filed-form {
+   font-size: 15px;
+   margin-bottom: 0;
+   margin-top: 0;
+   padding: 11px 8px;
+   border: 1px solid $light-black;
+   border-radius: 2px;
+   box-shadow: none;
+   &:focus {
+     box-shadow: 0px 0px 0px .5px black;
+   }
+ }
+
+ .textarea-message {
+   width: 100%;
+   padding: 12px;
+ }
+
+ .btn-sunmit-form {
+   background-color: #dd3333;
+   color: #FFF;
+   padding: 6px 20px;
+   border: 0;
+   text-transform: capitalize;
+   border-radius: 0;
+   margin: 24px 0 50px;
+   font-size: 16px;
+   &:focus {
+     box-shadow: none;
+   }
+   &:hover {
+     border-style: solid;
+     color: #c4c4c4;
+   }
+ }
+
+ %font-color-firstLetter {
+  font-size: 1.25rem;
+  color: $light-black;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+ }

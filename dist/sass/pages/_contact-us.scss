@@ -10,12 +10,7 @@
 
 .contact-us {
   .contactUS-title {
-    font-weight: 800;
-    font-size: 2.5rem;
-    line-height: 1.1;
-    text-transform: uppercase;
-    margin: 100px 0 70px;
-    color: $light-black;
+    @extend .section-heading-style ;
   }
   .contactUS-content {
     .branch-content {
@@ -39,39 +34,25 @@
           font-size: 1rem;
         }
         .address-content {
-          padding: 0;
-          margin:  0 10px 0 0
+         @extend %padding-margin;
         }
       }
       .phone {
-        display: flex;
-        align-items: center;
-        color: $light-black;
-        text-transform: capitalize;
+        @extend %flex-textTransform-color;
         .phone-title {
-          padding: 0;
-          margin:  0 10px 0 0;
-          font-weight: 700;
-          font-size: 1rem;
+          @extend %font-padding-margin;
         }
         .phone-content {
-          padding: 0;
-          margin:  0 10px 0 0
+          @extend %padding-margin;
         }
       }
     }
     .email {
       .email-content {
-        display: flex;
-        align-items: center;
-        color: $light-black;
-        text-transform: capitalize;
+        @extend %flex-textTransform-color;
         margin:  30px 0;
         .email-title {
-          padding: 0;
-          margin:  0 10px 0 0;
-          font-weight: 700;
-          font-size: 1rem;
+          @extend %font-padding-margin;
         }
         .email-link {
           color: $light-black;
@@ -101,76 +82,13 @@
       }
     }
   }
-}
-
-.form-container {
-  .required-files {
-    color: $light-black;
-    span {
-        color: #dd3333;
-    }
-  }
-  .needs-validation {
+  .form-container {
     .form-label {
-      font-size: 16px;
-      font-weight: 700;
-      text-transform: capitalize;
-      margin-bottom: 8px;
-      padding: 0;
-      color: $light-black;
+      @extend .form-label-style;
       &::after {
         content:" *";
-        position: relative;
         top: 2px;
-        color: #dd3333;
-      }
-    }
-    .input-filed {
-      font-size: 15px;
-      margin-bottom: 0;
-      margin-top: 0;
-      padding: 11px 8px;
-      border: 1px solid $light-black;
-      border-radius: 2px;
-      box-shadow: none;
-      &:focus {
-        box-shadow: 0px 0px 0px .5px black;
-      }
-    }
-    ::placeholder {
-      color: #8a8888;
-    }
-    select:required:invalid {
-      color: #8a8888;
-    }
-    option[value=""][disabled] {
-      display: none;
-    }
-    option {
-      color: black;
-    }
-
-    .message-content {
-      .text-message {
-        width: 100%;
-        padding: 12px;
-      }
-    }
-    .btn-submit {
-      background-color: #dd3333;
-      color: #FFF;
-      padding: 6px 20px;
-      border: 0;
-      text-transform: capitalize;
-      border-radius: 0;
-      margin: 24px 0 50px;
-      font-size: 16px;
-      &:focus {
-        box-shadow: none;
-      }
-      &:hover {
-        border-style: solid;
-        color: #c4c4c4;
+        @extend  %position-color ;
       }
     }
   }

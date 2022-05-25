@@ -36,6 +36,92 @@ body::-webkit-scrollbar {
   padding: 40px 0 25px;
 }
 
+.contact-us .contactUS-content .email .email-content, .contact-us .contactUS-content .branch-content .phone {
+  display: flex;
+  align-items: center;
+  color: #646464;
+  text-transform: capitalize;
+}
+
+.contact-us .contactUS-content .email .email-content .email-title, .contact-us .contactUS-content .branch-content .phone .phone-title {
+  padding: 0;
+  margin: 0 10px 0 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.contact-us .contactUS-content .branch-content .phone .phone-content, .contact-us .contactUS-content .branch-content .address .address-content {
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+
+.section-heading-style, .careers-container .careers-title, .contact-us .contactUS-title {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 100px 0 70px;
+  color: #646464;
+}
+
+.form-label-style, .form-container .needs-validation .form-label, .contact-us .form-container .form-label {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  padding: 0;
+  color: #646464;
+}
+
+.careers-container .form-container .form-label::after, .contact-us .form-container .form-label::after {
+  position: relative;
+  color: #dd3333;
+}
+
+.input-filed-form, .form-container .needs-validation .input-filed {
+  font-size: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 11px 8px;
+  border: 1px solid #646464;
+  border-radius: 2px;
+  box-shadow: none;
+}
+.input-filed-form:focus, .form-container .needs-validation .input-filed:focus {
+  box-shadow: 0px 0px 0px 0.5px black;
+}
+
+.textarea-message, .form-container .needs-validation .message-content .text-message {
+  width: 100%;
+  padding: 12px;
+}
+
+.btn-sunmit-form, .form-container .needs-validation .btn-submit {
+  background-color: #dd3333;
+  color: #FFF;
+  padding: 6px 20px;
+  border: 0;
+  text-transform: capitalize;
+  border-radius: 0;
+  margin: 24px 0 50px;
+  font-size: 16px;
+}
+.btn-sunmit-form:focus, .form-container .needs-validation .btn-submit:focus {
+  box-shadow: none;
+}
+.btn-sunmit-form:hover, .form-container .needs-validation .btn-submit:hover {
+  border-style: solid;
+  color: #c4c4c4;
+}
+
+.porject-moreDetails .porjectDesc-container .project-desc, .projectBanner-details .project-desc, .project-details .project-content .project-desc {
+  font-size: 1.25rem;
+  color: #646464;
+}
+.porject-moreDetails .porjectDesc-container .project-desc::first-letter, .projectBanner-details .project-desc::first-letter, .project-details .project-content .project-desc::first-letter {
+  text-transform: uppercase;
+}
+
 header .menu-bar #menuToggle {
   position: fixed;
   top: 18px;
@@ -201,14 +287,6 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   color: #646464;
 }
 
-.contact-us .contactUS-title {
-  font-weight: 800;
-  font-size: 2.5rem;
-  line-height: 1.1;
-  text-transform: uppercase;
-  margin: 100px 0 70px;
-  color: #646464;
-}
 .contact-us .contactUS-content .branch-content {
   margin-top: 30px;
 }
@@ -231,38 +309,8 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   font-weight: 700;
   font-size: 1rem;
 }
-.contact-us .contactUS-content .branch-content .address .address-content {
-  padding: 0;
-  margin: 0 10px 0 0;
-}
-.contact-us .contactUS-content .branch-content .phone {
-  display: flex;
-  align-items: center;
-  color: #646464;
-  text-transform: capitalize;
-}
-.contact-us .contactUS-content .branch-content .phone .phone-title {
-  padding: 0;
-  margin: 0 10px 0 0;
-  font-weight: 700;
-  font-size: 1rem;
-}
-.contact-us .contactUS-content .branch-content .phone .phone-content {
-  padding: 0;
-  margin: 0 10px 0 0;
-}
 .contact-us .contactUS-content .email .email-content {
-  display: flex;
-  align-items: center;
-  color: #646464;
-  text-transform: capitalize;
   margin: 30px 0;
-}
-.contact-us .contactUS-content .email .email-content .email-title {
-  padding: 0;
-  margin: 0 10px 0 0;
-  font-weight: 700;
-  font-size: 1rem;
 }
 .contact-us .contactUS-content .email .email-content .email-link {
   color: #646464;
@@ -281,90 +329,48 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   max-width: 35px;
   object-fit: cover;
 }
-
-.form-container .required-files {
-  color: #646464;
-}
-.form-container .required-files span {
-  color: #dd3333;
-}
-.form-container .needs-validation .form-label {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: capitalize;
-  margin-bottom: 8px;
-  padding: 0;
-  color: #646464;
-}
-.form-container .needs-validation .form-label::after {
+.contact-us .form-container .form-label::after {
   content: " *";
-  position: relative;
   top: 2px;
-  color: #dd3333;
-}
-.form-container .needs-validation .input-filed {
-  font-size: 15px;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 11px 8px;
-  border: 1px solid #646464;
-  border-radius: 2px;
-  box-shadow: none;
-}
-.form-container .needs-validation .input-filed:focus {
-  box-shadow: 0px 0px 0px 0.5px black;
-}
-.form-container .needs-validation ::placeholder {
-  color: #8a8888;
-}
-.form-container .needs-validation select:required:invalid {
-  color: #8a8888;
-}
-.form-container .needs-validation option[value=""][disabled] {
-  display: none;
-}
-.form-container .needs-validation option {
-  color: black;
-}
-.form-container .needs-validation .message-content .text-message {
-  width: 100%;
-  padding: 12px;
-}
-.form-container .needs-validation .btn-submit {
-  background-color: #dd3333;
-  color: #FFF;
-  padding: 6px 20px;
-  border: 0;
-  text-transform: capitalize;
-  border-radius: 0;
-  margin: 24px 0 50px;
-  font-size: 16px;
-}
-.form-container .needs-validation .btn-submit:focus {
-  box-shadow: none;
-}
-.form-container .needs-validation .btn-submit:hover {
-  border-style: solid;
-  color: #c4c4c4;
 }
 
-.contactUS-title {
+.careers-header {
+  min-height: 450px;
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.careers-header .careers-heading {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  font-size: 42px;
+  color: #646464;
+  padding: 0 10px;
+}
+
+.careers-container .careers-title {
   margin-bottom: 25px;
 }
-
-.careers-desc {
+.careers-container .careers-desc {
   font-size: 1.25rem;
   margin: 20px 0 40px;
   color: #646464;
 }
-
-.ourPersence-content {
-  text-transform: uppercase;
-  font-weight: 900 !important;
-  letter-spacing: 7px;
-  line-height: 1.6;
-  font-size: 2.1rem !important;
-  margin: 60px 0;
+.careers-container .form-container .form-label::after {
+  content: "(Required)" !important;
+  top: 0;
+  left: 4px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.careers-container .form-container .required-files {
+  color: #646464;
+}
+.careers-container .form-container .required-files span {
+  color: #dd3333;
 }
 
 .hero {
@@ -425,6 +431,85 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   transform: scale(1.1);
 }
 
+.banner-section {
+  height: 100vh;
+  margin-top: 75px;
+}
+.banner-section .banner-image {
+  height: 100%;
+}
+
+.project-details {
+  padding: 54px 0;
+}
+.project-details .project-content .project-title {
+  font-weight: 800;
+  font-size: 1.9rem;
+  line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #646464;
+  margin-bottom: 30px;
+}
+.project-banner {
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.project-banner .projectBannar-image {
+  height: 100%;
+}
+
+.projectBanner-details {
+  padding: 54px 0;
+}
+.porject-moreDetails {
+  height: 100vh;
+}
+.porject-moreDetails .moreDetails-banner {
+  height: 100%;
+}
+.porject-moreDetails .porjectDesc-container {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+.porject-moreDetails .porjectDesc-container .project-desc {
+  padding-bottom: 20px;
+}
+.porject-moreDetails .porjectDesc-container .projectRating-content .projectRating-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 29px 1038px 0 0;
+  color: #646464;
+}
+.porject-moreDetails .porjectDesc-container .projectRating-content .projectRating-name {
+  font-size: 1.25rem;
+  margin: 2px 1070px 0 0;
+  display: inline-block;
+  color: #646464;
+}
+
+.form-container .required-files {
+  color: #646464;
+}
+.form-container .required-files span {
+  color: #dd3333;
+}
+.form-container .needs-validation ::placeholder {
+  color: #8a8888;
+}
+.form-container .needs-validation select:required:invalid {
+  color: #8a8888;
+}
+.form-container .needs-validation option[value=""][disabled] {
+  display: none;
+}
+.form-container .needs-validation option {
+  color: black;
+}
 .about .about-container {
   margin-top: 100px;
 }

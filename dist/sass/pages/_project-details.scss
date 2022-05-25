@@ -1,0 +1,73 @@
+.banner-section {
+  height: 100vh;
+  margin-top: 75px;
+  .banner-image {
+      height: 100%;
+  }
+}
+
+.project-details {
+  padding: 54px 0;
+  .project-content {
+      .project-title {
+        font-weight: 800;
+        font-size: 1.9rem;
+        line-height: 1.1;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: $light-black;
+        margin-bottom: 30px;
+      }
+      .project-desc {
+        @extend %font-color-firstLetter;
+      }
+  }
+}
+
+.project-banner {
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  .projectBannar-image {
+    height: 100%;
+  }
+}
+
+.projectBanner-details {
+  padding: 54px 0;
+  .project-desc {
+    @extend %font-color-firstLetter;
+  }
+}
+
+.porject-moreDetails {
+  height: 100vh;
+  .moreDetails-banner {
+    height: 100%;
+  }
+  .porjectDesc-container {
+    padding-top: 54px;
+    padding-bottom: 54px;
+    .project-desc {
+      padding-bottom: 20px;
+      @extend %font-color-firstLetter;
+    }
+    .projectRating-content {
+      .projectRating-heading {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 29px 1038px 0 0;
+        color: $light-black;
+      }
+      .projectRating-name {
+        font-size: 1.25rem;
+        margin: 2px 1070px 0 0;
+        display: inline-block;
+        color: $light-black;
+      }
+    }
+  }
+}
