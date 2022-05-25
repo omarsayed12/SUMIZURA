@@ -454,17 +454,16 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
 }
 .project-banner {
   height: 100vh;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  overflow-x: hidden;
-  overflow-y: scroll;
 }
 .project-banner .projectBannar-image {
   height: 100%;
+  background-attachment: fixed;
 }
 
 .projectBanner-details {
   padding: 54px 0;
+  transform-style: preserve-3d;
+  position: relative;
 }
 .porject-moreDetails {
   height: 100vh;
