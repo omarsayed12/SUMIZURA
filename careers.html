@@ -33,10 +33,10 @@
   <body>
 
     <!-- start header -->
-    <header>
-      <nav class="navbar bg-white fixed-top">
-        <div class="nav-container">
-          <a class="navbar-brand site-wrappers-5" href="#">
+    <header class="fixed-top bg-white">
+      <div class="nav-container">
+        <nav class="navbar align-items-center">
+          <a class="navbar-brand site-wrappers-5" href="./index.html">
             <img src="./dist/imgs/logo.png" class="w-100" alt="SUMIZURA LOGO">
           </a>
           <nav role='navigation' class="menu-bar">
@@ -46,16 +46,23 @@
               <span class="humburger-icon"></span>
               <span class="humburger-icon"></span>
               <ul id="menu" class="menu-contnet">
-                <a class="nav-link" href="#"><li class="menu-item main-item">sumizura</li></a>
-                <a class="nav-link" href="#"><li class="menu-item">about us</li></a>
-                <a class="nav-link" href="#"><li class="menu-item">projects</li></a>
-                <a class="nav-link" href="#"><li class="menu-item">careers</li></a>
-                <a class="nav-link" href="#"><li class="menu-item">contact us</li></a>
+                <a class="nav-link" href="./index.html"><li class="menu-item main-item">sumizura</li></a>
+                <a class="nav-link" href="./about.html"><li class="menu-item">about us</li></a>
+                <a class="nav-link" href="./projects.html"><li class="menu-item">projects</li></a>
+                <a class="nav-link" href="./careers.html"><li class="menu-item">careers</li></a>
+                <a class="nav-link" href="./contactUs.html"><li class="menu-item">contact us</li></a>
               </ul>
             </div>
           </nav>
-        </div>
-      </nav>
+          <nav class="lang">
+            <ul class="drop-down closed">
+              <li class="lang-item"><a href="#" class="lang-link nav-button">En</a></li>
+              <li class="lang-item"><a href="#" class="lang-link">Ar</a></li>
+              <li class="lang-item"><a href="#" class="lang-link ">Fr</a></li>
+            </ul>
+          </nav>
+        </nav>
+      </div>
     </header>
     <!-- end header -->
     <!-- start main -->
@@ -63,7 +70,7 @@
       <!-- start our-persence -->
       <header class="careers-header" style="background-image: url('./dist/imgs/careersbg.jpg');background-position: center; background-repeat: no-repeat; background-size:cover ;">
         <div class="careers-container">
-          <h1 class="careers-heading text-center">
+          <h1 class="careers-heading text-center m-0">
             ARE YOU READY TO EXPL​ORE THE WORLD,<br> STIMULATE YOUR MIND AND INDULG​E YOUR IMAGINATION?
           </h1>
         </div>
@@ -73,39 +80,39 @@
       <section class="careers-container">
         <div class="container-fluid">
           <h1 class="careers-title">careers</h1>
-          <div class="row justify-content-between">
-            <div class="col-md-6">
+          <div class="row justify-content-center justify-content-lg-between">
+            <div class="col-12 col-md-11 col-lg-5">
                 <div class="careers-content">
                     <p class="careers-desc"> At SUMIZURA, we pride ourselves on having the courage to do things differently. We give our people the space to be themselves, and the freedom to design and do things their way.</p>
                     <p class="careers-desc">We believe that when clients choose to collaborate with us, they often make the decision based on our people. And not just their technical expertise, but their collaborative spirit and innovation. Their capacity for solving problems through creativity.​ As a result, ours is a genuinely dynamic, diverse and future-focused organization. We have the strength of vision to guide us, the energy to drive us, and a deep-rooted commitment to delivering positive change.</p>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-12 col-md-11 col-lg-7 col-xl-6">
               <div class="form-container">
                 <form class="needs-validation" novalidate>
                   <div class="row g-3">
-                    <div class="col-4">
+                    <div class="col-12 col-sm-10 col-md-6 col-xl-4">
                       <label for="name" class="form-label">name</label>
                       <input type="text" class="form-control input-filed" id="name" placeholder="Enter your name" value="" required>
                       <div class="invalid-feedback">
                          first name is required.
                       </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-10 col-md-6 col-xl-4">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control input-filed" id="email">
                         <div class="invalid-feedback">
                         Please enter a valid email
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-10 col-md-6 col-xl-4">
                         <label for="nationality"  class="form-label">nationality</label>
                         <input type="text" class="form-control input-filed" id="nationality" value="" required>
                         <div class="invalid-feedback">
                           nationality is required.
                         </div>
                       </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-lg-6">
                       <label for="country" class="form-label">Country of residence</label>
                       <select class="form-select input-filed" id="country" name="country-select" required>
                         <option value="">Egypte</option>
@@ -117,14 +124,14 @@
                         Please select a country of residence
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-lg-6">
                         <label for="linkedIn" class="form-label">linkedin profile</label>
                         <input type="text" class="form-control input-filed" name="linked-in" id="linkedIn" placeholder="https://" value="" required>
                         <div class="invalid-feedback">
                            linkedin is required.
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-lg-6">
                       <label for="mobilerNumber" class="form-label">mobile number</label>
                       <div class="input-group has-validation">
                         <input type="text" class="form-control input-filed" name="mobile-number" id="mobilerNumber" placeholder="Username" required>
@@ -133,7 +140,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-lg-6">
                         <label for="deparment" class="form-label">select department</label>
                         <select class="form-select input-filed" id="deparment" name="deparment-name" required>
                           <option value="">select department</option>

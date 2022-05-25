@@ -13,6 +13,19 @@
   width: auto;
   height: 380px;
   margin-bottom: 3px;
+  .project-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  @media screen and (max-width: 355px) {
+    height: 250px;
+  }
+  @media screen and (min-width: 991px) and (max-width:1200px) {
+    height: 280px;
+  }
   img {
     height: 397px;
     object-fit: cover;
@@ -21,6 +34,9 @@
     height: 100%;
     transform: scale(1);
     @include transisionElement(transform .5s ease-in-out);
+    @media screen and (max-width: 550px) {
+      height: 100%;
+    }
   }
   .project-content {
     position: absolute;

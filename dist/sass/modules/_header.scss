@@ -1,18 +1,24 @@
 header {
   .menu-bar {
     #menuToggle {
-      position: fixed;
-      top: 18px;
-      right: 50px;
-      display: block;
-      z-index: 1;
-      user-select: none;
-      -webkit-user-select: none;
+      position: relative;
+      right: 15px;
+      top: 4px;
+      // position: fixed;
+      // top: 18px;
+      // right: 50px;
+      // display: block;
+      // z-index: 1;
+      // user-select: none;
+      // -webkit-user-select: none;
+      @media screen and (max-width: 470px) {
+        right: 0;
+      }
       .menuToggle-icon {
+        position: absolute;
         display: block;
         width: 40px;
         height: 32px;
-        position: absolute;
         top: -7px;
         left: -5px;
         cursor: pointer;
@@ -37,6 +43,11 @@ header {
         }
         &:nth-last-child(2) {
           transform-origin: 0% 100%;
+        }
+        @media screen and (max-width: 470px) {
+          width: 25px;
+          height: 2.2px;
+          margin-bottom: 7px;
         }
       }
       .menu-contnet {
@@ -63,6 +74,7 @@ header {
           margin: 20px auto 0;
           @media screen and (max-width: 450px) {
             font-size: 17px;
+            margin: 15px auto 0;
           }
         }
         .main-item {
@@ -94,4 +106,74 @@ header {
 #menuToggle .menuToggle-icon:checked ~.menu-contnet {
   transform: none;
   opacity: 1;
+}
+
+// lang
+.lang {
+  position: absolute;
+  right: 75px;
+  top: 21px;
+  z-index: 9999;
+  @media screen and (max-width: 470px) {
+    right: 35px;
+    top: 12px;
+  }
+  .drop-down.closed {
+    height: 35px;
+
+  }
+  .drop-down {
+    list-style: none;
+    overflow: hidden;
+    height: 110px;
+    width: 75px;
+    background: #EEE;
+    margin: 0 auto;
+    padding: 0;
+    // box-shadow: 5px 10px 8px #646464;
+    -webkit-transition: height 0.3s ease;
+            transition: height 0.3s ease;
+    .lang-item {
+      border-bottom: 1px solid #ccc;
+      .nav-button {
+      }
+      .lang-link {
+        display: block;
+        color: $light-black;
+        text-decoration: none;
+        padding: 6px 9px;
+      }
+      &:first-child {
+        background-color: #fff;
+        border: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.lang .drop-down li:first-child a:after {
+  content: "\25BC";
+  padding-left: 5px;
+  font-size: 13px;
+  color: $light-black;
+}
+
+.nav-container {
+  @media screen and (max-width: 470px) {
+    .navbar-brand {
+      img {
+        max-width: 139px;
+        object-fit: cover;
+      }
+      .lang {}
+    }
+    .humburger-icon {
+      height: 2.4px;
+      width: 29px;
+    }
+    #menuToggle  {
+
+    }
+  }
 }
