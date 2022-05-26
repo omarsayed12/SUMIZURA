@@ -39,6 +39,9 @@
         @media screen and (min-width: 767.98px) and (max-width: 1342px) {
           align-items: baseline;
         }
+        @media screen and (max-width: 594px) {
+          align-items: baseline;
+        }
         .address-title {
           padding: 0;
           margin:  0 10px 0 0;

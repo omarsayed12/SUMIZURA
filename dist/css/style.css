@@ -412,6 +412,11 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
     align-items: baseline;
   }
 }
+@media screen and (max-width: 594px) {
+  .contact-us .contactUS-content .branch-content .address {
+    align-items: baseline;
+  }
+}
 .contact-us .contactUS-content .branch-content .address .address-title {
   padding: 0;
   margin: 0 10px 0 0;
