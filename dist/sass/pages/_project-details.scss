@@ -18,9 +18,15 @@
         text-transform: uppercase;
         color: $light-black;
         margin-bottom: 30px;
+        @media screen and (max-width: 425px) {
+          font-size: 1.4rem;
+        }
       }
       .project-desc {
         @extend %font-color-firstLetter;
+        @media screen and (max-width: 425px) {
+          font-size: 1.1rem;
+        }
       }
   }
 }
@@ -39,6 +45,9 @@
   position: relative;
   .project-desc {
     @extend %font-color-firstLetter;
+    @media screen and (max-width: 425px) {
+      font-size: 1.1rem;
+    }
   }
 }
 
@@ -47,26 +56,53 @@
   .moreDetails-banner {
     height: 100%;
   }
-  .porjectDesc-container {
-    padding-top: 54px;
-    padding-bottom: 54px;
-    .project-desc {
-      padding-bottom: 20px;
-      @extend %font-color-firstLetter;
+}
+
+.porjectDesc-container {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  .project-desc {
+    padding-bottom: 20px;
+    @extend %font-color-firstLetter;
+    @media screen and (max-width: 425px) {
+      font-size: 1.1rem;
     }
-    .projectRating-content {
-      .projectRating-heading {
-        font-size: 1.25rem;
-        font-weight: 700;
-        margin: 29px 1038px 0 0;
-        color: $light-black;
+  }
+  .projectRating-content {
+    .projectRating-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 29px  0 3px;
+      color: $light-black;
+      @media screen and (max-width: 425px) {
+        font-size: 1.10rem;
       }
-      .projectRating-name {
-        font-size: 1.25rem;
-        margin: 2px 1070px 0 0;
-        display: inline-block;
-        color: $light-black;
+    }
+    .projectRating-name {
+      font-size: 1.25rem;
+      margin: 3px 0;
+      display: inline-block;
+      color: $light-black;
+      @media screen and (max-width: 425px) {
+        font-size: 1rem;
       }
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: auto;
+    width: 100%;
+  }
+}
+// @media screen and (max-width: 767px) {
+//   .container-fluid {
+//     padding-right: 15px;
+//     padding-left: 15px;
+//     margin: auto;
+//     width: 100%;
+//   }
+// }

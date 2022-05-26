@@ -127,11 +127,11 @@ body::-webkit-scrollbar {
   color: #c4c4c4;
 }
 
-.porject-moreDetails .porjectDesc-container .project-desc, .projectBanner-details .project-desc, .project-details .project-content .project-desc {
+.porjectDesc-container .project-desc, .projectBanner-details .project-desc, .project-details .project-content .project-desc {
   font-size: 1.25rem;
   color: #646464;
 }
-.porject-moreDetails .porjectDesc-container .project-desc::first-letter, .projectBanner-details .project-desc::first-letter, .project-details .project-content .project-desc::first-letter {
+.porjectDesc-container .project-desc::first-letter, .projectBanner-details .project-desc::first-letter, .project-details .project-content .project-desc::first-letter {
   text-transform: uppercase;
 }
 
@@ -601,6 +601,17 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   color: #646464;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 425px) {
+  .project-details .project-content .project-title {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .project-details .project-content .project-desc {
+    font-size: 1.1rem;
+  }
+}
+
 .project-banner {
   height: 100vh;
 }
@@ -614,32 +625,62 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   transform-style: preserve-3d;
   position: relative;
 }
+@media screen and (max-width: 425px) {
+  .projectBanner-details .project-desc {
+    font-size: 1.1rem;
+  }
+}
+
 .porject-moreDetails {
   height: 100vh;
 }
 .porject-moreDetails .moreDetails-banner {
   height: 100%;
 }
-.porject-moreDetails .porjectDesc-container {
+
+.porjectDesc-container {
   padding-top: 54px;
   padding-bottom: 54px;
 }
-.porject-moreDetails .porjectDesc-container .project-desc {
+.porjectDesc-container .project-desc {
   padding-bottom: 20px;
 }
-.porject-moreDetails .porjectDesc-container .projectRating-content .projectRating-heading {
+@media screen and (max-width: 425px) {
+  .porjectDesc-container .project-desc {
+    font-size: 1.1rem;
+  }
+}
+.porjectDesc-container .projectRating-content .projectRating-heading {
   font-size: 1.25rem;
   font-weight: 700;
-  margin: 29px 1038px 0 0;
+  margin: 29px 0 3px;
   color: #646464;
 }
-.porject-moreDetails .porjectDesc-container .projectRating-content .projectRating-name {
+@media screen and (max-width: 425px) {
+  .porjectDesc-container .projectRating-content .projectRating-heading {
+    font-size: 1.1rem;
+  }
+}
+.porjectDesc-container .projectRating-content .projectRating-name {
   font-size: 1.25rem;
-  margin: 2px 1070px 0 0;
+  margin: 3px 0;
   display: inline-block;
   color: #646464;
 }
+@media screen and (max-width: 425px) {
+  .porjectDesc-container .projectRating-content .projectRating-name {
+    font-size: 1rem;
+  }
+}
 
+@media screen and (max-width: 1200px) {
+  .container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: auto;
+    width: 100%;
+  }
+}
 .form-container .required-files {
   color: #646464;
 }
@@ -677,6 +718,20 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   right: -30%;
   max-width: 604px;
 }
+@media screen and (max-width: 767.97px) {
+  .about .about-container .about-content .about-desc img {
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 767.98px) and (max-width: 991.98px) {
+  .about .about-container .about-content .about-desc img {
+    right: 0;
+    left: 20%;
+    max-width: 470px;
+  }
+}
 .about .about-container .about-number .aboutNumber-content {
   padding: 8px 0 20px;
   margin: 0 0 10px;
@@ -690,6 +745,8 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   font-size: 4.5rem;
   font-weight: 700;
   margin: 0;
+  min-height: 107px;
+  display: block;
 }
 .about .about-container .about-number .ourNumber-heading {
   color: #646464;
@@ -704,9 +761,29 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   text-transform: uppercase;
   font-size: 1rem;
 }
+@media screen and (max-width: 767.98px) {
+  .about .about-container .about-number {
+    margin: 30px 0;
+  }
+  .about .about-container .about-number .row {
+    flex-direction: row !important;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 399.98px) {
+  .about .about-container .about-number .col-6 {
+    width: 90%;
+  }
+}
 
 .company-intro {
   padding: 30px 0 60px;
+}
+@media screen and (max-width: 400px) {
+  .company-intro .companyCommom-heading {
+    font-size: 2rem;
+    padding: 18px 0 18px;
+  }
 }
 .company-intro .companyCommom-descrip {
   font-size: 1.25rem;
@@ -714,6 +791,11 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   margin-bottom: 0px;
   line-height: 1.7;
   color: #646464;
+}
+@media screen and (max-width: 400px) {
+  .company-intro .companyCommom-descrip {
+    font-size: 1.1rem;
+  }
 }
 .company-intro .companyCommom-intro {
   font-size: 1.25rem;
