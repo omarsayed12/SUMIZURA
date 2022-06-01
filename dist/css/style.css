@@ -743,6 +743,11 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
 .about .about-container {
   margin-top: 100px;
 }
+@media screen and (max-width: 570px) {
+  .about .about-container {
+    margin-top: 75px;
+  }
+}
 .about .about-container .about-content {
   position: relative;
   height: 638px;
