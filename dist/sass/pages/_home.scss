@@ -1,7 +1,13 @@
+.menu-contnet {
+  opacity: 0.9 !important;
+}
 #main-page {
   .carousel-item {
     .carousel-img {
       height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat
     }
     .carousel-caption {
       text-align: left;
@@ -31,7 +37,8 @@
       position: fixed;
       width: 146px;
       height: 146px;
-      top: 334px;
+      top: 50%;
+      transform: translate(0 , -50%);
       z-index: 999;
       opacity: 0;
       @include transisionElement(opacity .3s);
@@ -40,13 +47,12 @@
       }
       @media screen and (max-width: 767.98px){
         width: 85px;
-        top: 396px;
       }
     }
   .control-prev {
-    left: -16px;
+    left: -15px;
   }
   .control-next {
-    right: -16px;
+    right: -15px;
   }
 }

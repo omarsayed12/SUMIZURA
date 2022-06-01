@@ -45,6 +45,12 @@ body::-webkit-scrollbar-thumb {
   padding-top: 9px !important;
   padding-bottom: 45px !important;
 }
+@media screen and (max-width: 767.98px) {
+  .px-number {
+    padding-top: 0 !important;
+    padding-bottom: 15px !important;
+  }
+}
 
 #main-page .carousel-item .carousel-caption .caption-description, #main-page .carousel-item .carousel-caption .caption-heading {
   text-transform: uppercase;
@@ -273,7 +279,7 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   overflow: hidden;
   height: 110px;
   width: 75px;
-  background: #EEE;
+  background: transparent;
   margin: 0 auto;
   padding: 0;
   -webkit-transition: height 0.3s ease;
@@ -288,13 +294,17 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   text-decoration: none;
   padding: 6px 9px;
 }
-.lang .drop-down .lang-item:first-child {
-  background-color: #fff;
-  border: 0;
+.lang .drop-down > .lang-item {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
   padding: 0;
 }
+.lang .selected-lang {
+  background-color: #EEE;
+  opacity: 0.6;
+}
 
-.lang .drop-down li:first-child a:after {
+.lang .drop-down > li:first-child a:after {
   content: "▼";
   padding-left: 5px;
   font-size: 13px;
@@ -312,8 +322,15 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   }
 }
 
+.menu-contnet {
+  opacity: 0.9 !important;
+}
+
 #main-page .carousel-item .carousel-img {
   height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #main-page .carousel-item .carousel-caption {
   text-align: left;
@@ -344,7 +361,8 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   position: fixed;
   width: 146px;
   height: 146px;
-  top: 334px;
+  top: 50%;
+  transform: translate(0, -50%);
   z-index: 999;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
@@ -361,14 +379,13 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   #main-page .control-prev,
 #main-page .control-next {
     width: 85px;
-    top: 396px;
   }
 }
 #main-page .control-prev {
-  left: -16px;
+  left: -15px;
 }
 #main-page .control-next {
-  right: -16px;
+  right: -15px;
 }
 
 .our-persence .ourPersence-content {
@@ -689,10 +706,18 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 425px) and (max-width: 1200px) {
   .container-fluid {
     padding-right: 30px;
     padding-left: 30px;
+    margin: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 424.98px) {
+  .container-fluid {
+    padding-right: 10px;
+    padding-left: 10px;
     margin: auto;
     width: 100%;
   }
@@ -722,8 +747,16 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   position: relative;
   height: 638px;
 }
+@media screen and (max-width: 570px) {
+  .about .about-container .about-content {
+    height: 430px;
+  }
+}
 .about .about-container .about-content .about-img {
   height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .about .about-container .about-content .about-desc img {
   position: absolute;
@@ -756,6 +789,11 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   align-items: center;
   border: 5px solid #ff0000;
 }
+@media screen and (max-width: 500px) {
+  .about .about-container .about-number .aboutNumber-content {
+    padding-bottom: 10px;
+  }
+}
 .about .about-container .about-number .our-number {
   color: #646464;
   font-size: 4.5rem;
@@ -764,6 +802,12 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   min-height: 107px;
   display: block;
 }
+@media screen and (max-width: 500px) {
+  .about .about-container .about-number .our-number {
+    font-size: 3rem;
+    min-height: 77px;
+  }
+}
 .about .about-container .about-number .ourNumber-heading {
   color: #646464;
   letter-spacing: 2px;
@@ -771,11 +815,21 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   font-size: 1.125rem;
   font-weight: 700;
 }
+@media screen and (max-width: 500px) {
+  .about .about-container .about-number .ourNumber-heading {
+    font-size: 1rem;
+  }
+}
 .about .about-container .about-number .ourNumber-desc {
   color: #646464;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-size: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .about .about-container .about-number .ourNumber-desc {
+    font-size: 0.7rem;
+  }
 }
 @media screen and (max-width: 767.98px) {
   .about .about-container .about-number {
@@ -784,11 +838,6 @@ header .menu-bar #menuToggle .menu-contnet .main-item {
   .about .about-container .about-number .row {
     flex-direction: row !important;
     justify-content: center;
-  }
-}
-@media screen and (max-width: 399.98px) {
-  .about .about-container .about-number .col-6 {
-    width: 90%;
   }
 }
 

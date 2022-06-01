@@ -38,4 +38,8 @@ body::-webkit-scrollbar-thumb {
 .px-number {
 	padding-top: 9px !important;
 	padding-bottom: 45px !important;
+	@media screen and (max-width: 767.98px) {
+		padding-top: 0 !important;
+		padding-bottom: 15px !important;
+	}
 }

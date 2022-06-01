@@ -24,6 +24,7 @@ addEventListener('scroll' , ()=> {
     parralaxes.style.backgroundPositionY = (scrollOffset - parralaxes.offsetTop) * .1  + "px"
 })
 
+// counter function
 function numCounter(tagId,maxCount,speed){
   var initialNumber = 0;
   function counter(){

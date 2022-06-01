@@ -90,10 +90,18 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 425px)and (max-width: 1200px) {
   .container-fluid {
     padding-right: 30px;
     padding-left: 30px;
+    margin: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 424.98px) {
+  .container-fluid {
+    padding-right: 10px;
+    padding-left: 10px;
     margin: auto;
     width: 100%;
   }
