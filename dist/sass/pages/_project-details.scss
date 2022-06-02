@@ -2,7 +2,13 @@
   height: 100vh;
   margin-top: 75px;
   .banner-image {
-      height: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media screen and (min-width: 1450px) {
+      background-size: contain;
+    }
   }
 }
 
@@ -36,6 +42,12 @@
   .projectBannar-image {
     height: 100%;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media screen and (min-width: 1450px) {
+      background-size: contain;
+    }
   }
 }
 
@@ -55,6 +67,12 @@
   height: 100vh;
   .moreDetails-banner {
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media screen and (min-width: 1450px) {
+      background-size: contain;
+    }
   }
 }
 
